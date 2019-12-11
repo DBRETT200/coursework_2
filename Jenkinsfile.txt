@@ -2,7 +2,7 @@ pipeline {
     agent any
 
   environment {
-    registry = "DBRETT200/coursework2"
+    registry = "dbrett200/coursework2"
     registryCredential = 'dockerhub'
   }
 
