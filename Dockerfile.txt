@@ -11,4 +11,5 @@ EXPOSE 8080
 COPY server.js .
 
 # the command execute when the file is read
+
 CMD node server.js
