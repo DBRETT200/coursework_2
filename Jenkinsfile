@@ -12,6 +12,12 @@ pipeline {
     git 'https://github.com/DBRETT200/coursework_2.git'
   }
 }
+
+ stage('Initialize Docker'){
+        def dockerHome = tool 'myDocker'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
+    }
+
         stage('Building Docker Image') {
             steps {
 			  script {
