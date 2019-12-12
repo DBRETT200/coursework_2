@@ -1,12 +1,10 @@
 pipeline {
-    agent {dockerfile true}
-
   environment {
     registry = "dbrett200/coursework2"
     registryCredential = 'dockerhub'
     dockerImage = ' '
   }
-
+    agent any
     stages {
 	
 	stage('Cloning Git Repository') {
