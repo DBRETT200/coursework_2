@@ -41,13 +41,5 @@ pipeline {
         }
     }
 }
-
-	stage('Update Application'){
-		
-		steps{
-		sh 'ssh azureuser@52.146.52.221 ls'
-		}
-}
-
     }
 }
